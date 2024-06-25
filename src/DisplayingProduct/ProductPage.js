@@ -2,7 +2,7 @@ import React from "react";
 import ProductDetails from "./ProductDetails";
 
 
-const ProductPage = () => {
+const ProductPage = () =>{
     const product = {
         name: "LG AC ",
         price: "Rs 45,999",
