@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProductList from './ProductList';
+import './index.css';
 
 const products = [
     { id: 1, name: 'iPhone 15 Pro Max', price: '₹129900', description: 'Apple\'s latest smartphone with A17 Bionic chip.' },
@@ -22,12 +23,13 @@ const Dashboard = () => {
         setSearchItem(event.target.value);
     };
 
-    const filteredProducts = productList.filter(product =>
-        product.name.toLowerCase().includes(searchItem.toLowerCase())
-    );
+    const filteredProducts = productList.filter(product => {
+        const searchLower = searchItem.toLowerCase();
+        return product.name.toLowerCase().includes(searchLower) || product.id.toString().includes(searchLower)
+    });
 
     return (
-        <div>
+        <div className='container'>
             <input
                 type="text"
                 placeholder="Search products..."
