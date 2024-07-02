@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products, addToCart }) => {
     return (
         <div className='card-container'>
             {products.map(product => (
@@ -9,6 +9,7 @@ const ProductList = ({ products }) => {
                     <h2>{product.name}</h2>
                     <p>{product.price}</p>
                     <p>Description: {product.description}</p>
+                    <button onClick={() => addToCart(product)}>Add to Cart</button>
                 </div>
             ))}
         </div>
