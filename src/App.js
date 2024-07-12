@@ -7,6 +7,7 @@ import LoginPage from './DataFilteringUsingCRUD/LoginPage';
 import DashboardPage from './DataFilteringUsingCRUD/DashboardPage';
 import Counter from './CounterApp/Counter';
 import ParentComponent from './ChildToParent/ParentComponent';
+import UsersList from './FetchingData/UserList';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,8 +23,9 @@ function App() {
         <LoginPage onLogin={setIsLoggedIn}></LoginPage>
       )}
       <Counter></Counter>
-      */}
       <ParentComponent></ParentComponent>
+      */}
+      <UsersList></UsersList>
       
 
       
