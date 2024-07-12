@@ -63,7 +63,7 @@ const Dashboard = () => {
                 </select>
                 <input
                     type="text"
-                    placeholder={`Search products by ${searchType}...`}
+                    placeholder={`Search products by ${searchType}`}
                     value={searchItem}
                     onChange={handleFilter}
                 />
