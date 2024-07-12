@@ -9,6 +9,7 @@ import Counter from './CounterApp/Counter';
 import ParentComponent from './ChildToParent/ParentComponent';
 import UsersList from './FetchingData/UserList';
 import ProductFilterApp from './LiftingState/ProductFilterApp';
+import ImageGallery from './SliderComponent/ImageGallery';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,8 +27,9 @@ function App() {
       <Counter></Counter>
       <ParentComponent></ParentComponent>
       <UsersList></UsersList>
-      */}
       <ProductFilterApp></ProductFilterApp>
+      */}
+      <ImageGallery></ImageGallery>
       
       
 
